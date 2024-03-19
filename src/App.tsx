@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import DisplayRepos from '../src/components/display-repos';
+import DisplayReposForm from './components/display-repos-form';
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     <>
       <input onChange={handleChange} />
       <button onClick={toggleListVisibility}>Show Repositories</button>
-      {repoListVisbility && <DisplayRepos user={user} />}
+      {repoListVisbility && <DisplayReposForm user={user} />}
     </>
   );
 }
